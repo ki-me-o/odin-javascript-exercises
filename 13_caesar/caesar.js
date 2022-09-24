@@ -30,4 +30,4 @@ function modulo (a,b) {
 
 
 // Do not edit below this line
-//module.exports = caesar;
+module.exports = caesar;
