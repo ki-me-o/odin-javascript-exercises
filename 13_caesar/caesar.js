@@ -1,5 +1,9 @@
 const caesar = function(message, shift) {
-    
+    let encryptedMessage = "";
+    for(let i = 0; i < message.length; i++) {
+        encryptedMessage += shiftChar(message.charAt(i), shift);
+    }
+    return encryptedMessage;
 };
 
 function shiftChar(char, shift) {
