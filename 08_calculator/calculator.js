@@ -26,8 +26,14 @@ const power = function(base, exponent) {
 	return base ** exponent;
 };
 
-const factorial = function() {
-	
+const factorial = function(number) {
+	let result = 1;
+  if(number > 0) {
+    for(let i = 1; i <= number; i++) {
+      result *= i;
+    }
+  }
+  return result;
 };
 
 // Do not edit below this line
