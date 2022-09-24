@@ -22,8 +22,8 @@ const multiply = function(multiplicableArray) {
   return product;
 };
 
-const power = function() {
-	
+const power = function(base, exponent) {
+	return base ** exponent;
 };
 
 const factorial = function() {
