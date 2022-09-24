@@ -1,10 +1,11 @@
 const palindromes = function (string) {
-    cleanString = removeSeparators(string);
-    return (cleanString === reverseString(cleanString));
+    standardString = standardizeString(string);
+    return (standardString === reverseString(standardString));
 };
 
-function removeSeparators(string) {
-    return string.replaceAll(/[^a-zA-Z0-9]/mg, "");
+function standardizeString(string) {
+    standardString = string.toLowerCase();
+    return standardString.replaceAll(/[^a-zA-Z0-9]/mg, "");
 }
 
 function reverseString(string) {
