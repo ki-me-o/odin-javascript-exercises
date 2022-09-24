@@ -1,11 +1,13 @@
 // C = (F - 32) x (5/9)
 const ftoc = function(fahrenheit) {
-  return (fahrenheit - 32) * (5/9);
+  let unroundedCelsius = (fahrenheit - 32) * (5/9);
+  return Math.round(unroundedCelsius * 10) / 10;
 };
 
 // F = C x (9/5) + 32
 const ctof = function(celsius) {
-  return celsius * (9/5) + 32;
+  let unroundedFahrenheit = celsius * (9/5) + 32;
+  return Math.round(unroundedFahrenheit * 10) / 10;
 };
 
 // Do not edit below this line
